@@ -12,11 +12,13 @@ namespace E_Food.AccesoDatos.Repositorio
     {
         private readonly ApplicationDbContext _db;
         public ITipoComidaRepositorio TipoComida { get; private set; }
+        public ITipoPrecioRepositorio TipoPrecio { get; private set; }
 
         public UnidadTrabajo(ApplicationDbContext db)
         {
             _db = db;
             TipoComida = new TipoComidaRepositorio(_db);
+            TipoPrecio = new TipoPrecioRepositorio(_db);
         }
 
 

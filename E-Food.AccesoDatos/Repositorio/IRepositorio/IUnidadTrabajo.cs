@@ -10,6 +10,7 @@ namespace E_Food.AccesoDatos.Repositorio.IRepositorio
     {
 
         ITipoComidaRepositorio TipoComida { get; }
+        ITipoPrecioRepositorio TipoPrecio { get; }
 
         Task Guardar();
     }

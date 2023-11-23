@@ -13,6 +13,7 @@ namespace E_Food.AccesoDatos.Data
         }
 
         public DbSet<TipoComida> TiposComidas { get; set; }
+        public DbSet<TipoPrecio> TiposPrecios { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
